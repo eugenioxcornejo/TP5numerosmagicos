@@ -1,4 +1,4 @@
-function numeroaleatorio(min, max) {
+const numeroaleatorio = (min, max) => {
     console.log('numero aleatorio generado');
     
     min= Math.ceil(1);
@@ -9,10 +9,10 @@ function numeroaleatorio(min, max) {
 
 };
 
-
+const numerogenerado = numeroaleatorio();
 
 enviar = ( ) => {
-    console.log();
+    console.log(numerogenerado);
     const numerodelusuario = document.querySelector('#numeroingresado').value;
    console.log (numerodelusuario)
     //if 
