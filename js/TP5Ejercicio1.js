@@ -11,11 +11,20 @@ const numeroaleatorio = (min, max) => {
 
 const numerogenerado = numeroaleatorio();
 
-enviar = ( ) => {
-    console.log(numerogenerado);
+const enviar = ( ) => {
+    console.log(`nuemro generado= ${numerogenerado}`);
     const numerodelusuario = document.querySelector('#numeroingresado').value;
+    
+    if(numerodelusuario==numerogenerado){
+        alert('Adivinaste!!!')
+        console.log('adivinaste')
+    } else if(numerodelusuario<numerogenerado){
+        alert('Tu numero es menor')
+    } else if(numerodelusuario>numerogenerado){
+        alert('tu numero es mayor')
+    }
+    
    console.log (numerodelusuario)
-    //if 
-//alert()
+ 
 };
 
